@@ -17,13 +17,13 @@ form.addEventListener('submit', (event) => {
         .then(data => {
             const namazTimes = data.data.timings;
             resultContainer.innerHTML = `
-                <h5 class="alert alert-primary text-dark text-center">Namaz times for ${cityName} on ${fullDate}</h5>
-                <div class="d-flex justify-content-center">
-                    <div class="alert alert-success text-center w-50"><strong>FAJR:</strong> ${namazTimes.Fajr}</div>&nbsp;
-                    <div class="alert alert-success text-center w-50"><strong>DHUHR:</strong> ${namazTimes.Dhuhr}</div>&nbsp;
-                    <div class=" alert alert-success text-center w-50"><strong>ASR:</strong> ${namazTimes.Asr}</div>&nbsp;
-                    <div class=" alert alert-success text-center w-50"><strong>MAGHRIB:</strong> ${namazTimes.Maghrib}</div>&nbsp;
-                    <div class="alert alert-success text-center w-50"><strong>ISHA:</strong> ${namazTimes.Isha}</div>&nbsp;
+                <h5 class="alert alert-primary text-dark text-center mb-3">Namaz times for ${cityName} on ${fullDate}</h5>
+                <div class="d-flex flex-column align-items-center">
+                    <div class="alert alert-success text-center w-75 mb-2"><strong>FAJR:</strong> ${namazTimes.Fajr}</div>
+                    <div class="alert alert-success text-center w-75 mb-2"><strong>DHUHR:</strong> ${namazTimes.Dhuhr}</div>
+                    <div class="alert alert-success text-center w-75 mb-2"><strong>ASR:</strong> ${namazTimes.Asr}</div>
+                    <div class="alert alert-success text-center w-75 mb-2"><strong>MAGHRIB:</strong> ${namazTimes.Maghrib}</div>
+                    <div class="alert alert-success text-center w-75 mb-2"><strong>ISHA:</strong> ${namazTimes.Isha}</div>
                 </div>
             `;
         })
