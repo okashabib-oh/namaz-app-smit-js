@@ -1,4 +1,8 @@
 body {
+    background-image: url('./images/vee.jpg');
+    background-repeat: no-repeat;  
+    background-size: cover;        
+    background-position: center;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -7,7 +11,7 @@ body {
 }
 
 .container {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.537), rgba(58, 58, 73, 0.66));
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.537), rgba(36, 36, 45, 0.722));
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
@@ -21,5 +25,5 @@ body {
     padding: 15px;
     margin-top: 20px;
     color: #dee2e6;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.426);
+    box-shadow: 10px 10px 10px rgba(75, 75, 75, 0.426);
 }
